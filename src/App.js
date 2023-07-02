@@ -18,6 +18,7 @@ function App() {
 	console.log("uchoice = ", uchoice)
 
 	setTotal(tot+ uchoice);
+	setUchoice(uchoice);
 	var h = "Half Century";
 	var c = "Century";
 
@@ -38,12 +39,12 @@ function App() {
 function play1(){
   let random = Math.floor(Math.random() * 6)+ 1
   setCchoice(random)
+  setUchoice(1)
 	if(random === 1){
     setComment("Out!")
 		setTotal(0)
 	}
 	else{
-    setUchoice(1)
 		setComment("A single taken")
 		if(uchoice == 1) {
 			score()
@@ -54,12 +55,12 @@ function play1(){
 function play2(){
   let random = Math.floor(Math.random() * 6)+ 1
   setCchoice(random)
+  setUchoice(2)
 	if(random === 2){
     setComment("Out!")
 		setTotal(0)
 	}
 	else{
-    setUchoice(2)
 		setComment("batsman looking for two runs...")
 		if(uchoice == 2) {
 			score()
@@ -71,12 +72,12 @@ function play2(){
 function play3(){
   let random = Math.floor(Math.random() * 6)+ 1
   setCchoice(random)
+  setUchoice(3)
 	if(random === 3){
     setComment("Out!")
 		setTotal(0)
 	}
 	else{
-    setUchoice(3)
 		setComment("batsmen are quick between the wickets....3 runs taken...")
 		if(uchoice == 3) {
 			score()
@@ -88,12 +89,12 @@ function play3(){
 function play4(){
   let random = Math.floor(Math.random() * 6)+ 1
   setCchoice(random)
+  setUchoice(4)
 	if(random === 4){
     setComment("Out!")
 		setTotal(0)
 	}
 	else{
-    setUchoice(4)
 		setComment("ball races to the boundary line..... 4 it is....")
 		if(uchoice == 4) {
 			score()
@@ -104,13 +105,13 @@ function play4(){
 
 function play5(){
   let random = Math.floor(Math.random() * 6)+ 1
+  setUchoice(5)
   setCchoice(random)
 	if(random === 5){
     setComment("Out!")
 		setTotal(0)
   }
 	else{
-    setUchoice(5)
 		setComment("No ball and a boundary...")
 		if(uchoice == 5) {
 			score()
@@ -122,12 +123,12 @@ function play5(){
 function play6(){
   let random = Math.floor(Math.random() * 6)+ 1
   setCchoice(random)
+  setUchoice(6)
 	if(random === 6){
     setComment("Out!")
 		setTotal(0)
 	}
 	else{
-    setUchoice(6)
 		setComment("Over the boundary line.... 6 it is")
 		if(uchoice == 6) {
 			score()
